@@ -1,0 +1,1 @@
+export default function Feedback({error,message,loading}) {return <div aria-live="polite">{loading&&<p className="p-4 text-blue-700">Loading…</p>}{error&&<p role="alert" className="my-4 rounded-xl bg-red-50 border border-red-200 p-4 text-red-700">{error}</p>}{message&&<p className="my-4 rounded-xl bg-emerald-50 p-4 text-emerald-800">{message}</p>}</div>;}
